@@ -2,7 +2,7 @@ data "aws_iam_policy_document" "rds_proxy_assume_role_policy_document" {
   statement {
     principals {  # 誰が (RDSが)
       type        = "AWS"
-      identifiers = ["arn:aws:iam::197086462522:role/rds-proxy-role"]
+      identifiers = [""]
     }
     actions = ["sts:AssumeRole"]  # 何をして　(STSからIAM roleをassumeして)
     effect  = "Allow"  # 良い
